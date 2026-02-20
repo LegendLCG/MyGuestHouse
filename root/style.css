@@ -18,16 +18,18 @@ body{
     margin: 0;
     background-color: #FFF8EE;
     font-family: sans-serif;
+    color: #2B2B2B;
 }
 
 #nav-list {
-    list-style-type: none;
+    list-style-type: none;]
 }
 
 
 .nav-item {
     float: left;
     padding: 16px;
+    color:#2B2B2B;
 }
 .nav-item:hover{
     font-style:italic;
@@ -36,6 +38,7 @@ body{
 
 #current-page{
     text-decoration: underline;
+    text-decoration-color: #2B2B2B;
 }
 
 
@@ -73,20 +76,67 @@ footer {
     border-top-color: #EADCCD;
     border-top-width: thin;
     background-color: #FFFFFF;
-    width: auto;
-    height: 120px;
+    width: 100%;
+    height: 150px;
 
-    display: block;
-    width: auto;
-    background-color: #B38769;
-    max-width: 1500px;
-    height: 50px;
-    font-size: 15px;
-    text-align: center;
-    color: #2B2B2B;
-    padding: 1em;
 }
 
+#fnav{
+    padding: 20px;
+
+}
+
+.flist{
+    padding:5px;
+    font-size:14px;
+}
+
+#flist{
+    padding-bottom:5px;
+}
+
+#fcontact{
+    padding: 20px;
+    align-content:center;
+}
+
+.c-data{
+    padding-left: 15px;
+    padding-bottom: 5px;
+    text-align:left;
+    font-size:14px;
+}
+
+td{
+    text-align:center;
+}
+
+#flogos{
+    padding: 20px;
+}
+
+.sicon{
+    font-size: 10px;
+    height:40px;
+    width:auto;
+    overflow:hidden;
+}
+
+#flogo {
+    width: auto;
+    padding-right:15px;
+    height: 80px;
+    overflow:hidden;
+    
+}
+
+div{
+    display: inline-block;
+}
+
+p{
+      text-align:center;
+  }
 
 
 a {
