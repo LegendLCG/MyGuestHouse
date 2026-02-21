@@ -12,6 +12,7 @@ header{
     background-color: #FFFFFF;
     width: auto;
     height: 60px;
+    z-index:1000;
 }
 
 body{
@@ -21,18 +22,22 @@ body{
     color: #2B2B2B;
 }
 
+
 #nav-list {
+    display:flex;
+    align-items: center;
+    gap: 20px;
     list-style-type: none;
 }
 
 
 .nav-item {
-    float: left;
     padding: 16px;
-    color:#2B2B2B;
+    color: #2B2B2B;
 }
-.nav-item:hover{
-    font-style:italic;
+
+.nav-item:hover {
+    font-style: italic;
 }
 
 
@@ -42,19 +47,20 @@ body{
 }
 
 
-#book-button {
+.book-button {
     
     background-color:#F4A55A;
     border:none;
-    height: 40px;
-    width: 100px;
+    padding: 10px 20px;
     border-radius:12px;
-    text-align:center;    
+    text-align:center;
+    font-size: 16px;
+    color:#2B2B2B;
 }
 
 #logo{
     width: auto;
-    height: 80px;
+    height: 60px;
 }
 
 nav {
@@ -62,7 +68,7 @@ nav {
     width: auto;
     max-width: 1500px;
     height: 75px;
-    font-size: 15px;
+    font-size: 16px;
     padding: 1em;
 }
 
@@ -87,7 +93,7 @@ footer {
 
 .flist{
     padding:5px;
-    font-size:14px;
+    font-size:16px;
 }
 
 #flist{
@@ -103,7 +109,7 @@ footer {
     padding-left: 15px;
     padding-bottom: 5px;
     text-align:left;
-    font-size:14px;
+    font-size:16px;
 }
 
 td{
@@ -129,38 +135,69 @@ td{
     
 }
 
-div{
+.inline-container{
     display: inline-block;
 }
-
-p{
-      text-align:center;
-  }
-
 
 a {
     color: #2B2B2B;
     text-decoration: none;
 }
 
-h1 {
-    text-align: center;
-    color: #2D8C8C;
+.container{
+    position:relative;
+    text-align:center;
 }
 
+.main-image{
+    width:95%;
+    height:auto;
+}
 
-.content {
+h1{
+    color: #FFFFFF;
+}
+
+#cottage-description{
+    color:#FFFFFF;
+}
+
+#image-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+h2{
+    text-align:center;
+}
+
+.card-container{
     display: flex;
-    justify-content: center;
+    text-align:center;
+}
+
+h3{
+    text-align:center;
+}
+
+.card{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 25px;
+    background-color: white;
+    color:#2B2B2B;
+}
+
+.card p{
+    text-align:center;
+    font-size:16px;
 }
 
 
-
-
-
-#description {
-    text-align: left;
+.card-img{
+    text-align:center;
     width: 90%;
 }
-
-
