@@ -82,8 +82,6 @@ footer {
     background-color: #FFFFFF;
     width: 100%;
     height: 150px;
-    align-items: center;
-    justify-content: space-between;
 }
 
 #fnav{
@@ -135,7 +133,7 @@ td{
     
 }
 
-.inline-container{
+.inline-container {
     display: inline-block;
 }
 
@@ -162,7 +160,7 @@ h1{
     color:#FFFFFF;
 }
 
-#image-content{
+.image-content{
     position:absolute;
     top:50%;
     left:50%;
@@ -200,4 +198,55 @@ h3{
 .card-img{
     text-align:center;
     width: 90%;
+}
+
+#contact-page {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-areas: "header map" "contact-details map" "context map";
+    grid-template-columns: 66% 34%;
+    gap: 3px;
+    padding: 5px;
+}
+
+p{
+    text-align:center
+}
+
+.header{
+    grid-area: header;
+    padding: 10px;
+    text-align: left;
+}
+
+.contact-details{
+    font-size: 16px;
+    text-align: left;
+    grid-area: contact-details;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.context{
+    
+    font-size: 18px;
+    grid-area: context;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#map {
+    text-align:center;
+    grid-area: map;
+    height: 100%;
+}
+iframe {
+    text-align:center;
+    width:100%;
+    height:90%;
+    border:0;
 }
